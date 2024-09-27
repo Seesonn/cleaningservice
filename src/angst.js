@@ -265,10 +265,10 @@ export default function HomePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-700">
-                    <Mail className="mr-2" /> info@angstwear.com
+                    <Mail className="mr-2" /> angstwear@gmail.com
                   </p>
                   <p className="flex items-center text-gray-700">
-                    <Phone className="mr-2" /> (123) 456-7890
+                    <Phone className="mr-2" /> 984435444
                   </p>
                   <p className="flex items-center text-gray-700">
                     <MapPin className="mr-2" /> 666 Rebellion Road, Punkville, 54321
