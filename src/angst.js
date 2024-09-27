@@ -107,7 +107,7 @@ export default function HomePage() {
     <div className="min-h-screen bg-gray-100 text-gray-900 font-sans">
       <header className="bg-gray-900 shadow-md sticky top-0 z-10">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-4 flex justify-between items-center">
-          <h1 className="text-2xl font-bold text-white">ANGSTWear</h1>
+          <h1 className="text-2xl font-bold text-white">SISANWear</h1>
           <nav className="hidden md:flex space-x-4">
             <a href="#home" className="text-gray-300 hover:text-white transition-colors">Home</a>
             <a href="#shop" className="text-gray-300 hover:text-white transition-colors">Shop</a>
@@ -166,7 +166,7 @@ export default function HomePage() {
               className="w-full h-auto rounded-lg"
             />
             <div className="absolute inset-0 flex flex-col justify-center items-start p-8 bg-black bg-opacity-50 rounded-lg">
-              <h2 className="text-4xl font-bold mb-4 text-white">Angst Redefined:</h2>
+              <h2 className="text-4xl font-bold mb-4 text-white">Sisan Redefined:</h2>
               <p className="text-xl mb-4 text-gray-200">Shop Fashion that Screams Rebellion, Number 1 in Attitude</p>
               <button className="bg-gray-900 text-white px-6 py-2 rounded-md hover:bg-gray-800 transition-colors">Shop now</button>
             </div>
@@ -240,7 +240,7 @@ export default function HomePage() {
           <section id="about" className="mb-12 bg-white rounded-lg shadow-md p-6">
             <h2 className="text-2xl font-semibold mb-4 text-gray-900">About Us</h2>
             <p className="mb-4 text-gray-700">
-              At ANGSTWear, we're passionate about providing edgy, high-quality clothing for the modern rebel. Our curated collection of jackets, tops, bottoms, footwear, and accessories is designed to help you express your inner angst and stand out from the crowd.
+              At SISANWear, we're passionate about providing edgy, high-quality clothing for the modern rebel. Our curated collection of jackets, tops, bottoms, footwear, and accessories is designed to help you express your inner angst and stand out from the crowd.
             </p>
             <p className="text-gray-700">
               With years of experience in alternative fashion, our team of experts carefully selects each item in our inventory to ensure that we're offering the latest underground trends and timeless punk classics that will fuel your rebellion for years to come.
@@ -265,7 +265,7 @@ export default function HomePage() {
               <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
                 <div className="space-y-4">
                   <p className="flex items-center text-gray-700">
-                    <Mail className="mr-2" /> angstwear@gmail.com
+                    <Mail className="mr-2" /> sisanwear@gmail.com
                   </p>
                   <p className="flex items-center text-gray-700">
                     <Phone className="mr-2" /> 984435444
@@ -295,7 +295,7 @@ export default function HomePage() {
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-sm text-gray-300">Email: angstwear@gmail.com</p>
+              <p className="text-sm text-gray-300">Email: sisanwear@gmail.com</p>
               <p className="text-sm text-gray-300">Phone: 9845367677</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
@@ -323,7 +323,7 @@ export default function HomePage() {
             </div>
           </div>
           <div className="mt-8 border-t border-gray-800 pt-8 text-center">
-            <p className="text-sm text-gray-400">© 2024 ANGSTWear. All rights reserved.</p>
+            <p className="text-sm text-gray-400">© 2024 SISANWear. All rights reserved.</p>
           </div>
         </div>
       </footer>
