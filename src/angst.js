@@ -31,7 +31,7 @@ const products = [
   { id: 7, name: 'Sisan Sweetshirt', category: 'Tops', price: 1200, img:p7 , description: 'Made from a blend of breathable cotton and polyester ' },
   { id: 8, name: ' Sisan Sweetshirt', category: 'Tops', price:1200 , img:p8 , description: 'Made from a blend of breathable cotton and polyester ' },
   { id: 9, name: 'Sisan Vest', category: 'Tops', price:1200 , img:p5 , description: 'Made from lightweight, breathable fabric and polyester' },
-  { id: 10, name: 'The Mojito ', category: 'Accessories', price:600 , img: p10 , description: 'Red Guitar String Wood Men Wedding Bands polstact' },
+  { id: 10, name: 'The Mojito ', category: 'Accessories', price:600 , img: p10 , description: 'Red Guitar String Wood Men Wedding Bands ' },
   { id:11 , name: 'Gold Platted Ring', category: 'Accessories', price:100 , img:p11 , description: 'Smooth  gold Platted Ring of German halfaty' }
 
 ]
