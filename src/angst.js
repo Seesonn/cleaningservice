@@ -268,7 +268,7 @@ export default function HomePage() {
                     <Mail className="mr-2" /> sisanwear@gmail.com
                   </p>
                   <p className="flex items-center text-gray-700">
-                    <Phone className="mr-2" /> 984435444
+                    <Phone className="mr-2" /> 9844354444
                   </p>
                   <p className="flex items-center text-gray-700">
                     <MapPin className="mr-2" />  Salakpur, Morang
