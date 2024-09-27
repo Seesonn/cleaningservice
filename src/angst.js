@@ -23,7 +23,7 @@ import home from"./assests/home.png"
 
 const products = [
   { id: 1, name: 'Distressed Denim Jacket', category: 'Outerwear', price: 15999, img:p6, description: 'Edgy denim jacket with intentional distressing' },
-  { id: 2, name: ' Black Cotton Jeans', category: 'Bottoms', price: 7999, img:p2, description: 'Sleek black jeans ' },
+  { id: 2, name: ' Black Cotton Jeans', category: 'Bottoms', price: 7999, img:p2, description: 'Sleek black jeans and  dusty graded angst ' },
   { id: 3, name: 'Spiked Leather Choker', category: 'Accessories', price: 2499, img:p3 , description: 'Bold leather choker with metal spikes' },
   { id: 4, name: 'Studded Combat Boots', category: 'Footwear', price: 12999, img:p4 , description: 'Heavy-duty boots with silver studs and duty' },
   { id: 5, name: 'Vintage Shirt', category: 'Tops', price: 3999, img:p5 , description: 'Vintage-style t-shirt with punk rock graphics' },
