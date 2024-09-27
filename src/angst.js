@@ -271,7 +271,7 @@ export default function HomePage() {
                     <Phone className="mr-2" /> 984435444
                   </p>
                   <p className="flex items-center text-gray-700">
-                    <MapPin className="mr-2" /> 666 Rebellion Road, Punkville, 54321
+                    <MapPin className="mr-2" />  Salakpur, Morang
                   </p>
                 </div>
                 <form className="space-y-4">
@@ -295,8 +295,8 @@ export default function HomePage() {
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <h3 className="text-lg font-semibold mb-4">Contact</h3>
-              <p className="text-sm text-gray-300">Email: info@angstwear.com</p>
-              <p className="text-sm text-gray-300">Phone: (123) 456-7890</p>
+              <p className="text-sm text-gray-300">Email: angstwear@gmail.com</p>
+              <p className="text-sm text-gray-300">Phone: 9845367677</p>
             </div>
             <div className="w-full md:w-1/4 mb-6 md:mb-0">
               <h3 className="text-lg font-semibold mb-4">Follow Us</h3>
