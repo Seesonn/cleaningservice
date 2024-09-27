@@ -22,17 +22,17 @@ import p11 from"./assests/p11.png"
 import home from"./assests/home.png"
 
 const products = [
-  { id: 1, name: 'Distressed Denim Jacket', category: 'Outerwear', price: 15999, img:p1, description: 'Edgy denim jacket with intentional distressing' },
+  { id: 1, name: 'Distressed Denim Jacket', category: 'Outerwear', price: 15999, img:p6, description: 'Edgy denim jacket with intentional distressing' },
   { id: 2, name: ' Black Cotton Jeans', category: 'Bottoms', price: 7999, img:p2, description: 'Sleek black jeans ' },
   { id: 3, name: 'Spiked Leather Choker', category: 'Accessories', price: 2499, img:p3 , description: 'Bold leather choker with metal spikes' },
-  { id: 4, name: 'Studded Combat Boots', category: 'Footwear', price: 12999, img:p4 , description: 'Heavy-duty boots with silver studs' },
-  { id: 5, name: 'Graphic Band Tee', category: 'Tops', price: 3999, img:p5 , description: 'Vintage-style t-shirt with punk rock graphics' },
-  { id: 6, name: 'Leather Biker Jacket', category: 'Outerwear', price: 24999, img:p6 , description: 'Classic biker jacket in genuine leather' },
+  { id: 4, name: 'Studded Combat Boots', category: 'Footwear', price: 12999, img:p4 , description: 'Heavy-duty boots with silver studs and duty' },
+  { id: 5, name: 'Vintage Shirt', category: 'Tops', price: 3999, img:p5 , description: 'Vintage-style t-shirt with punk rock graphics' },
+  { id: 6, name: 'Leather Biker Jacket', category: 'Outerwear', price: 24999, img:p1 , description: 'Classic biker jacket in genuine leather' },
   { id: 7, name: 'Sisan Sweetshirt', category: 'Tops', price: 1200, img:p7 , description: 'Made from a blend of breathable cotton and polyester ' },
   { id: 8, name: ' Sisan Sweetshirt', category: 'Tops', price:1200 , img:p8 , description: 'Made from a blend of breathable cotton and polyester ' },
-  { id: 9, name: 'Sisan Vest', category: 'Tops', price:1200 , img:p5 , description: 'Made from lightweight, breathable fabric' },
-  { id: 10, name: 'The Mojito ', category: 'Accessories', price:600 , img: p10 , description: 'Red Guitar String Wood Men Wedding Bands' },
-  { id:11 , name: 'Gold Platted Ring', category: 'Tops', price:100 , img:p11 , description: 'Smooth  gold Platted Ring of Germany' }
+  { id: 9, name: 'Sisan Vest', category: 'Tops', price:1200 , img:p5 , description: 'Made from lightweight, breathable fabric and polyester' },
+  { id: 10, name: 'The Mojito ', category: 'Accessories', price:600 , img: p10 , description: 'Red Guitar String Wood Men Wedding Bands polstact' },
+  { id:11 , name: 'Gold Platted Ring', category: 'Tops', price:100 , img:p11 , description: 'Smooth  gold Platted Ring of German halfaty' }
 
 ]
 
