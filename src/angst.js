@@ -772,7 +772,7 @@ const CleaningService = () => {
           <p className="text-lg sm:text-xl font-semibold text-gray-700 leading-relaxed mb-6">
             Our company specializes in providing top-notch cleaning and a variety of other professional services tailored to meet the unique needs of our clients. We are committed to delivering quality, reliability, and customer satisfaction in every service we offer.
           </p>
-          <div className="mt-6 px-4 sm:px-6 py-3 bg-green-600 rounded-full">
+          <div className="mt-6 px-4 sm:px-6 py-3 bg-green-600 rounded-lg">
             <h1 className="text-2xl sm:text-3xl font-bold text-white">
               Excellence in Every<br />Service, Every Time
             </h1>
