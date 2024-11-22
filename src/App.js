@@ -1,8 +1,8 @@
-import HomePage from "./angst"
+import CleaningService from "./angst"
 function App() {
   return (
     <div className="App">
-  <HomePage/>
+  <CleaningService/>
     </div>
   );
 }
