@@ -590,10 +590,10 @@ export default function HomePage() {
 
 
 import React, { useState, useEffect } from 'react';
-import c1 from "./assets/cl1.jpg";
-import c2 from "./assets/cl2.jpg";
-import c3 from "./assets/cl3.jpg";
-import c4 from "./assets/cl4.jpg";
+import c1 from "./assests/cl1.jpg";
+import c2 from "./assests/cl2.jpg";
+import c3 from "./assests/cl3.jpg";
+import c4 from "./assests/cl4.jpg";
 
 // PhoneIcon component
 const PhoneIcon = (props) => (
