@@ -1,4 +1,4 @@
-
+/*
 
 import React, { useState } from 'react'
 import { Menu, X, ShoppingBag, ChevronRight, Mail, Phone, MapPin } from 'lucide-react'
@@ -328,7 +328,7 @@ export default function HomePage() {
         </div>
       </footer>
 
-      {/* Category Products Popup */}
+     
       <AnimatePresence>
         {selectedCategory && (
           <motion.div
@@ -377,7 +377,7 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Cart Popup */}
+
       <AnimatePresence>
         {isCartOpen && (
           <motion.div
@@ -439,7 +439,7 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Login Popup */}
+    
       <AnimatePresence>
         {isLoginOpen && (
           <motion.div
@@ -487,7 +487,7 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Signup Popup */}
+    
       <AnimatePresence>
         {isSignupOpen && (
           <motion.div
@@ -540,7 +540,7 @@ export default function HomePage() {
         )}
       </AnimatePresence>
 
-      {/* Forgot Password Popup */}
+      {/* Forgot Password Popup *
       <AnimatePresence>
         {isForgotPasswordOpen && (
           <motion.div
@@ -582,4 +582,274 @@ export default function HomePage() {
       </AnimatePresence>
     </div>
   )
+} */
+
+
+
+
+
+
+import React, { useState, useEffect } from 'react';
+import c1 from "./assets/cl1.jpg";
+import c2 from "./assets/cl2.jpg";
+import c3 from "./assets/cl3.jpg";
+import c4 from "./assets/cl4.jpg";
+
+// PhoneIcon component
+const PhoneIcon = (props) => (
+  <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" stroke="#23a450" {...props}>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path d="M3.51089 2L7.15002 2.13169C7.91653 2.15942 8.59676 2.64346 8.89053 3.3702L9.96656 6.03213C10.217 6.65159 10.1496 7.35837 9.78693 7.91634L8.40831 10.0375C9.22454 11.2096 11.4447 13.9558 13.7955 15.5633L15.5484 14.4845C15.9939 14.2103 16.5273 14.1289 17.0314 14.2581L20.5161 15.1517C21.4429 15.3894 22.0674 16.2782 21.9942 17.2552L21.7705 20.2385C21.6919 21.2854 20.8351 22.1069 19.818 21.9887C6.39245 20.4276 -1.48056 1.99997 3.51089 2Z" stroke="#3caa49" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"></path>
+    </g>
+  </svg>
+);
+
+// WhatsappIcon component
+const WhatsappIcon = (props) => (
+  <svg height="24px" width="24px" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink" viewBox="0 0 512 512" xmlSpace="preserve" fill="#000000" {...props}>
+    <g id="SVGRepo_bgCarrier" strokeWidth="0"></g>
+    <g id="SVGRepo_tracerCarrier" strokeLinecap="round" strokeLinejoin="round"></g>
+    <g id="SVGRepo_iconCarrier">
+      <path style={{fill: "#EDEDED"}} d="M0,512l35.31-128C12.359,344.276,0,300.138,0,254.234C0,114.759,114.759,0,255.117,0 S512,114.759,512,254.234S395.476,512,255.117,512c-44.138,0-86.51-14.124-124.469-35.31L0,512z"></path>
+      <path style={{fill: "#55CD6C"}} d="M137.71,430.786l7.945,4.414c32.662,20.303,70.621,32.662,110.345,32.662 c115.641,0,211.862-96.221,211.862-213.628S371.641,44.138,255.117,44.138S44.138,137.71,44.138,254.234 c0,40.607,11.476,80.331,32.662,113.876l5.297,7.945l-20.303,74.152L137.71,430.786z"></path>
+      <path style={{fill: "#FEFEFE"}} d="M187.145,135.945l-16.772-0.883c-5.297,0-10.593,1.766-14.124,5.297 c-7.945,7.062-21.186,20.303-24.717,37.959c-6.179,26.483,3.531,58.262,26.483,90.041s67.09,82.979,144.772,105.048 c24.717,7.062,44.138,2.648,60.028-7.062c12.359-7.945,20.303-20.303,22.952-33.545l2.648-12.359 c0.883-3.531-0.883-7.945-4.414-9.71l-55.614-25.6c-3.531-1.766-7.945-0.883-10.593,2.648l-22.069,28.248 c-1.766,1.766-4.414,2.648-7.062,1.766c-15.007-5.297-65.324-26.483-92.69-79.448c-0.883-2.648-0.883-5.297,0.883-7.062 l21.186-23.834c1.766-2.648,2.648-6.179,1.766-8.828l-25.6-57.379C193.324,138.593,190.676,135.945,187.145,135.945"></path>
+    </g>
+  </svg>
+);
+
+const CloseIcon = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <line x1="18" y1="6" x2="6" y2="18"></line>
+    <line x1="6" y1="6" x2="18" y2="18"></line>
+  </svg>
+);
+
+const HamburgerIcon = (props) => (
+  <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round" {...props}>
+    <line x1="3" y1="12" x2="21" y2="12"></line>
+    <line x1="3" y1="6" x2="21" y2="6"></line>
+    <line x1="3" y1="18" x2="21" y2="18"></line>
+  </svg>
+);
+
+const ImageSlider = () => {
+  const [currentImage, setCurrentImage] = useState(0);
+  const images = [c1, c2, c3, c4];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prevImage) => (prevImage + 1) % images.length);
+    }, 2000);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  return (
+    <div className="relative w-full h-[300px] sm:h-[400px] md:h-[500px] lg:h-[600px] overflow-hidden rounded-lg shadow-md">
+      {images.map((img, index) => (
+        <img
+          key={index}
+          src={img}
+          alt={`Cleaning Service ${index + 1}`}
+          className={`absolute top-0 left-0 w-full h-full object-cover transition-opacity duration-1000 ${
+            index === currentImage ? 'opacity-100' : 'opacity-0'
+          }`}
+        />
+      ))}
+    </div>
+  );
+};
+
+const CleaningService = () => {
+  const [isFormOpen, setIsFormOpen] = useState(false);
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  useEffect(() => {
+    if (isFormOpen || isMobileMenuOpen) {
+      document.body.style.overflow = 'hidden';
+    } else {
+      document.body.style.overflow = 'unset';
+    }
+  }, [isFormOpen, isMobileMenuOpen]);
+
+  const handleBookNow = () => {
+    setIsFormOpen(true);
+  };
+
+  const handleCloseForm = () => {
+    setIsFormOpen(false);
+  };
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    const formData = new FormData(e.target);
+    const name = formData.get('name');
+    const date = formData.get('date');
+    const time = formData.get('time');
+    const message = formData.get('message');
+    const whatsappMessage = `Name: ${name}, Date: ${date}, Time: ${time}, Message: ${message}`;
+    window.open(`https://wa.me/+971566156317?text=${encodeURIComponent(whatsappMessage)}`, '_blank');
+    setIsFormOpen(false);
+  };
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
+  const handlePhoneClick = () => {
+    window.location.href = 'tel:+971502331784';
+  };
+
+  const handleWhatsAppClick = () => {
+    window.open('https://wa.me/+971566156317', '_blank');
+  };
+
+  const scrollToHome = (e: React.MouseEvent<HTMLAnchorElement>) => {
+    e.preventDefault();
+    const homeSection = document.getElementById('home');
+    if (homeSection) {
+      homeSection.scrollIntoView({ behavior: 'smooth' });
+    }
+    if (isMobileMenuOpen) {
+      setIsMobileMenuOpen(false);
+    }
+  };
+
+  return (
+    <div className="min-h-screen bg-gray-100">
+      <header className="flex flex-col sm:flex-row justify-between items-center p-4 bg-white shadow-md">
+        <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4 w-full sm:w-auto">
+          <span className="font-bold text-lg">Try It</span>
+          <div className="flex flex-col sm:flex-row items-center space-y-2 sm:space-y-0 sm:space-x-4">
+            <div className="flex items-center space-x-2 cursor-pointer" onClick={handlePhoneClick}>
+              <PhoneIcon className="w-5 h-5 text-green-500" />
+              <span className="text-sm sm:text-base">+971 502 331 784</span>
+            </div>
+            <div className="flex items-center space-x-2 cursor-pointer" onClick={handleWhatsAppClick}>
+              <WhatsappIcon className="w-5 h-5" />
+              <span className="text-sm sm:text-base">+971 566 156 317</span>
+            </div>
+          </div>
+        </div>
+        <nav className="hidden md:flex space-x-6">
+          <a href="#" onClick={scrollToHome} className="text-gray-700 hover:text-green-600 transition-colors duration-200">Home</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200">About us</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Services</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Why us</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200">Gallery</a>
+        </nav>
+        <button className="md:hidden text-gray-700 absolute top-4 right-4" onClick={toggleMobileMenu}>
+          <HamburgerIcon className="w-6 h-6" />
+        </button>
+      </header>
+
+      <div
+        className={`fixed inset-y-0 right-0 w-full sm:w-1/2 bg-white shadow-lg transform transition-transform duration-300 ease-in-out z-50 ${
+          isMobileMenuOpen ? 'translate-x-0' : 'translate-x-full'
+        }`}
+      >
+        <div className="flex justify-end p-4">
+          <button onClick={toggleMobileMenu}>
+            <CloseIcon className="w-6 h-6" />
+          </button>
+        </div>
+        <nav className="flex flex-col space-y-4 p-4">
+          <a href="#" onClick={scrollToHome} className="text-gray-700 hover:text-green-600 transition-colors duration-200 text-lg">Home</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200 text-lg">About us</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200 text-lg">Services</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200 text-lg">Why us</a>
+          <a href="#" className="text-gray-700 hover:text-green-600 transition-colors duration-200 text-lg">Gallery</a>
+        </nav>
+      </div>
+
+      <main id="home" className="flex flex-col md:flex-row items-center justify-between p-4 sm:p-8 max-w-7xl mx-auto">
+        <div className="w-full md:w-1/2">
+          <ImageSlider />
+        </div>
+        <div className="w-full md:w-1/2 mt-8 md:mt-0 md:ml-8 flex flex-col items-center text-center">
+          <p className="text-lg sm:text-xl font-semibold text-gray-700 leading-relaxed mb-6">
+            Our company specializes in providing top-notch cleaning and a variety of other professional services tailored to meet the unique needs of our clients. We are committed to delivering quality, reliability, and customer satisfaction in every service we offer.
+          </p>
+          <div className="mt-6 px-4 sm:px-6 py-3 bg-green-600 rounded-full">
+            <h1 className="text-2xl sm:text-3xl font-bold text-white">
+              Excellence in Every<br />Service, Every Time
+            </h1>
+          </div>
+          <button
+            onClick={handleBookNow}
+            className="mt-8 px-6 py-3 bg-green-700 text-white rounded-lg shadow-md hover:bg-green-800 transition-colors"
+          >
+            BOOK NOW
+          </button>
+        </div>
+      </main>
+
+      {isFormOpen && (
+        <div className="fixed inset-0 z-50 flex items-center justify-center overflow-auto bg-black bg-opacity-50 backdrop-blur-sm">
+          <div className="bg-white rounded-lg shadow-xl w-11/12 max-w-xs mx-auto z-10 sm:max-w-sm">
+            <div className="flex justify-between items-center p-2 sm:p-4 border-b">
+              <h3 className="text-sm sm:text-lg font-medium">Book Now</h3>
+              <button onClick={handleCloseForm} className="text-gray-400 hover:text-gray-500">
+                <CloseIcon className="w-4 h-4 sm:w-5 sm:h-5" />
+              </button>
+            </div>
+            <form onSubmit={handleSubmit} className="p-2 sm:p-4 space-y-2 sm:space-y-4">
+              <div>
+                <label htmlFor="name" className="block text-2xs sm:text-sm font-medium text-gray-700">Name</label>
+                <input
+                  type="text"
+                  id="name"
+                  name="name"
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 sm:py-2 px-2 sm:px-3 text-2xs sm:text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                />
+              </div>
+              <div>
+                <label htmlFor="date" className="block text-2xs sm:text-sm font-medium text-gray-700">Date</label>
+                <input
+                  type="date"
+                  id="date"
+                  name="date"
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 sm:py-2 px-2 sm:px-3 text-2xs sm:text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                />
+              </div>
+              <div>
+                <label htmlFor="time" className="block text-2xs sm:text-sm font-medium text-gray-700">Time</label>
+                <input
+                  type="time"
+                  id="time"
+                  name="time"
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 sm:py-2 px-2 sm:px-3 text-2xs sm:text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                />
+              </div>
+              <div>
+                <label htmlFor="message" className="block text-2xs sm:text-sm font-medium text-gray-700">Message</label>
+                <textarea
+                  id="message"
+                  name="message"
+                  rows={3}
+                  required
+                  className="mt-1 block w-full border border-gray-300 rounded-md shadow-sm py-1 sm:py-2 px-2 sm:px-3 text-2xs sm:text-sm focus:ring-2 focus:ring-green-500 focus:border-green-500"
+                ></textarea>
+              </div>
+              <button
+                type="submit"
+                className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-2 sm:px-4 py-1 sm:py-2 bg-green-600 text-2xs sm:text-sm font-medium text-white hover:bg-green-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500"
+              >
+                Send to WhatsApp
+              </button>
+            </form>
+          </div>
+        </div>
+      )}
+    </div>
+  );
 }
+
+export default CleaningService;
+
+
