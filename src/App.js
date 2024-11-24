@@ -1,5 +1,5 @@
-import CleaningService from "./assests/assets/components/CleaningService"
-import Gallery from "./assests/assets/components/gallery"
+import CleaningService from "./components/CleaningService"
+import Gallery from "./components/gallery"
 function App() {
   return (
     <div className="App">
