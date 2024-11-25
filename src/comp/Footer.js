@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/30 text-center">
-          <p>&copy; 2024 Alnajoom Alshams. All Rights Reserved</p>
+          <p className="text-sm">&copy; 2024 Alnajoom Alshams. All Rights Reserved</p>
         </div>
       </div>
     </footer>
