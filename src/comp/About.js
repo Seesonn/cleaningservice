@@ -3,7 +3,7 @@ import React, { useState } from 'react';
 import g1 from '../assets/tara.jpg';
 import g2 from '../assets/babu.png';
 import g3 from '../assets/sandessh.jpg';
-import g4 from '../assets/g4.jpg';
+import g4 from '../assets/raju.png';
 import g5 from '../assets/saroj.jpg';
 import cert from '../assets/cert.jpg';
 import { CloseIcon } from './icons/CloseIcon';
