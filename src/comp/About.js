@@ -87,7 +87,7 @@ const About = () => {
       </div>
 
       {/* Description */}
-      <div className="max-w-3xl mx-auto text-center text-lg leading-relaxed text-gray-600 mb-8">
+      <div className="max-w-3xl mx-auto text-center text-sm leading-relaxed text-gray-600 mb-8">
         <p className="mb-4">
           Welcome to Ahsajoom Ahshems, your trusted partner in professional cleaning services. We are committed to creating spotless, healthy, and welcoming environments for all.
         </p>
