@@ -1,40 +1,3 @@
-// import React from 'react';
-
-// const services = [
-//   'Residential Cleaning',
-//   'Commercial Cleaning',
-//   'Deep Cleaning',
-//   'Maintenance Services'
-// ];
-
-// const Services = () => {
-//   return (
-//     <section id="services" className="py-16">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">Our Services</h2>
-//         <div className="mt-10">
-//           <dl className="space-y-10 md:space-y-0 md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-//             {services.map((service) => (
-//               <div key={service} className="relative">
-//                 <dt>
-//                   <div className="absolute flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-//                     {/* You can add icons here */}
-//                   </div>
-//                   <p className="ml-16 text-lg leading-6 font-medium text-gray-900">{service}</p>
-//                 </dt>
-//                 <dd className="mt-2 ml-16 text-base text-gray-500">
-//                   We provide top-quality {service.toLowerCase()} to ensure your space is always at its best.
-//                 </dd>
-//               </div>
-//             ))}
-//           </dl>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default Services;
 import s1 from '../assets/deep.jpg';
 import s2 from '../assets/full.jpg';
 import s3 from '../assets/main.jpg';
@@ -53,7 +16,7 @@ export default function Services() {
     },
     {
       title: "Full House Maid",
-      description: "Professional maids for household assistance, tailored service.",
+      description: "Professional maids for household assistance,service.",
       image: s2,
     },
     {
@@ -63,12 +26,12 @@ export default function Services() {
     },
     {
       title: "Pull Cleaning",
-      description: "Specialized cleaning for hard-to-reach or unique areas.",
+      description: "Specialized cleaning for hard-to-reach, areas.",
       image: s4,
     },
     {
       title: "Commercial Cleaning",
-      description: "Customized cleaning for offices, retail spaces, and businesses.",
+      description: "cleaning for offices, retail spaces, and businesses.",
       image: s5,
     },
     {
