@@ -1,44 +1,4 @@
-// import React from 'react';
 
-// const reasons = [
-//   'Experienced Team',
-//   'Quality Service',
-//   'Customer Satisfaction',
-//   'Eco-Friendly Products'
-// ];
-
-// const WhyUs = () => {
-//   return (
-//     <section id="why-us" className="py-16 bg-gray-100">
-//       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-//         <h2 className="text-3xl font-extrabold text-gray-900 text-center mb-8">Why Choose Us</h2>
-//         <div className="mt-10">
-//           <ul className="md:grid md:grid-cols-2 md:gap-x-8 md:gap-y-10">
-//             {reasons.map((reason) => (
-//               <li key={reason} className="mt-10 md:mt-0">
-//                 <div className="flex">
-//                   <div className="flex-shrink-0">
-//                     <div className="flex items-center justify-center h-12 w-12 rounded-md bg-green-500 text-white">
-//                       {/* You can add icons here */}
-//                     </div>
-//                   </div>
-//                   <div className="ml-4">
-//                     <h4 className="text-lg leading-6 font-medium text-gray-900">{reason}</h4>
-//                     <p className="mt-2 text-base text-gray-500">
-//                       We pride ourselves on our {reason.toLowerCase()}, ensuring the best results for our clients.
-//                     </p>
-//                   </div>
-//                 </div>
-//               </li>
-//             ))}
-//           </ul>
-//         </div>
-//       </div>
-//     </section>
-//   );
-// };
-
-// export default WhyUs;
 
 import React, { useState } from 'react';
 
