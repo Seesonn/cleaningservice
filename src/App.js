@@ -1,12 +1,13 @@
-import CleaningService from "./components/CleaningService"
-import Gallery from "./components/gallery"
+import  Main from"./comp/Main"
+
 function App() {
   return (
     <div className="App">
-  <CleaningService/>
-    <Gallery/>
+  < Main/>
+  
     </div>
   );
 }
 
 export default App;
+
