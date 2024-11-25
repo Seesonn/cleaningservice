@@ -33,7 +33,7 @@ const SocialIcon = ({ href, children }) => (
 
 export default function Footer() {
   return (
-    <footer className="bg-green-500 text-white">
+    <footer className="bg-[#4CAF50]  text-white">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
@@ -97,7 +97,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="mt-8 pt-8 border-t border-white/30 text-center">
-          <p className="text-sm">&copy; 2024 Alnajoom Alshams. All Rights Reserved</p>
+          <p >&copy; 2024 Alnajoom Alshams. All Rights Reserved</p>
         </div>
       </div>
     </footer>
