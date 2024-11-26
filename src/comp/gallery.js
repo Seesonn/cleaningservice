@@ -9,11 +9,11 @@ import g7 from '../assets/g7.jpg';
 import g8 from '../assets/g8.jpg';
 import g9 from '../assets/g9.jpg';
 import g10 from '../assets/g10.jpg';
-import c5 from "../assets/cc1.png";
-import c6 from "../assets/ccl2.png";
+import c5 from "../assets/cl5.png";
+
 
 export default function Gallery() {
-  const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,c5,c6];
+  const images = [g1, g2, g3, g4, g5, g6, g7, g8, g9, g10,c5];
   const [showAll, setShowAll] = useState(false);
 
   const handleShowMore = () => {
